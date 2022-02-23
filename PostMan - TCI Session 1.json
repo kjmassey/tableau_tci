@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "c8294ebb-fd57-444c-b723-cb7abff67ce3",
+		"name": "Tableau Coders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Session 1",
+			"item": [
+				{
+					"name": "REST API Sign In - XML",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<tsRequest>\r\n  <credentials personalAccessTokenName=\"Kyle\"\r\n    personalAccessTokenSecret=\"wk01meshQA+/uINR2061GA==:XG4JKgQ7K2KouS0vvT0DWupBhluKrlUs\" >\r\n      <site contentUrl=\"kjmdev797388\" />\r\n  </credentials>\r\n</tsRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://10ax.online.tableau.com/api/3.14/auth/signin",
+							"protocol": "https",
+							"host": [
+								"10ax",
+								"online",
+								"tableau",
+								"com"
+							],
+							"path": [
+								"api",
+								"3.14",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REST API Sign In - JSON",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"credentials\" : {\r\n        \"personalAccessTokenName\":\"Kyle\",\r\n        \"personalAccessTokenSecret\":\"wk01meshQA+/uINR2061GA==:XG4JKgQ7K2KouS0vvT0DWupBhluKrlUs\",\r\n        \"site\": {\r\n            \"contentUrl\":\"kjmdev797388\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://10ax.online.tableau.com/api/3.14/auth/signin",
+							"protocol": "https",
+							"host": [
+								"10ax",
+								"online",
+								"tableau",
+								"com"
+							],
+							"path": [
+								"api",
+								"3.14",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REST API - Get Workbooks by Site - XML",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tableau-Auth",
+								"value": "9pCLB1JDTouO7TxWiotqTQ|pnHIVFxT75lufk5VJR1Fg8HqpSPsmjgL",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://10ax.online.tableau.com/api/3.14/sites/f8dbec1d-2217-42b0-868a-229a2ff090bb/workbooks",
+							"protocol": "https",
+							"host": [
+								"10ax",
+								"online",
+								"tableau",
+								"com"
+							],
+							"path": [
+								"api",
+								"3.14",
+								"sites",
+								"f8dbec1d-2217-42b0-868a-229a2ff090bb",
+								"workbooks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REST API - Get Workbooks by Site - JSON",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tableau-Auth",
+								"value": "9pCLB1JDTouO7TxWiotqTQ|pnHIVFxT75lufk5VJR1Fg8HqpSPsmjgL",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://10ax.online.tableau.com/api/3.14/sites/f8dbec1d-2217-42b0-868a-229a2ff090bb/workbooks",
+							"protocol": "https",
+							"host": [
+								"10ax",
+								"online",
+								"tableau",
+								"com"
+							],
+							"path": [
+								"api",
+								"3.14",
+								"sites",
+								"f8dbec1d-2217-42b0-868a-229a2ff090bb",
+								"workbooks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REST API - Filter Workbook Results - XML",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tableau-Auth",
+								"value": "LHZtJ-AuRSSeTxv66wkEyg|b24ScBotyl2bHybdNS0NcJ60kXqUxBAy",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://10ax.online.tableau.com/api/3.14/sites/f8dbec1d-2217-42b0-868a-229a2ff090bb/workbooks/?filter=name:eq:Regional Manager Performance",
+							"protocol": "https",
+							"host": [
+								"10ax",
+								"online",
+								"tableau",
+								"com"
+							],
+							"path": [
+								"api",
+								"3.14",
+								"sites",
+								"f8dbec1d-2217-42b0-868a-229a2ff090bb",
+								"workbooks",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "name:eq:Regional Manager Performance"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REST API - Filter Workbook Results - JSON",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Tableau-Auth",
+								"value": "LHZtJ-AuRSSeTxv66wkEyg|b24ScBotyl2bHybdNS0NcJ60kXqUxBAy",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://10ax.online.tableau.com/api/3.14/sites/f8dbec1d-2217-42b0-868a-229a2ff090bb/workbooks/?filter=name:eq:Regional Manager Performance",
+							"protocol": "https",
+							"host": [
+								"10ax",
+								"online",
+								"tableau",
+								"com"
+							],
+							"path": [
+								"api",
+								"3.14",
+								"sites",
+								"f8dbec1d-2217-42b0-868a-229a2ff090bb",
+								"workbooks",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "name:eq:Regional Manager Performance"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
