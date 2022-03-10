@@ -1,5 +1,5 @@
 # Lines that start with a '#' are comments
-# These lines will not be treated as code of executed
+# These lines will not be treated as code or executed
 
 ########
 # VIRTUAL ENVIRONMENTS
