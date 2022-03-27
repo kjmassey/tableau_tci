@@ -128,3 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 TCI3/pat_secret.py
+
+.vscode/
+TCI3 - 30-MAR-22/pat_secret.py
