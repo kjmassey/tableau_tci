@@ -9,4 +9,6 @@ kyle.massey@gmail.com
 
 Twitter: @UpInYourVizness
 
+RSVP to our Hub to receive updates about future events: https://usergroups.tableau.com/tableaucoders
+
 
