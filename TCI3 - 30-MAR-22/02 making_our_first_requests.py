@@ -1,6 +1,7 @@
 import requests
 import json
 
+
 def get_all_breeds():
     '''
     Dog API: Send a simple GET, returns a JSON object with all available breeds
@@ -11,12 +12,16 @@ def get_all_breeds():
 
     return resp.content
 
+
 def random_image_by_breed(breed_name):
     '''
     Dog API: Return random images of the specified breed
     '''
-    
+
     # f strings are CRUCIAL, learn to love them!
+    # https://realpython.com/python-f-strings/
+
+    # url = "https://dog.ceo/api/breed/{}/images/random/3".format(breed_name)
     url = f"https://dog.ceo/api/breed/{breed_name}/images/random/3"
 
     resp = requests.get(url)
@@ -30,6 +35,11 @@ def random_image_by_breed(breed_name):
 # SCRATCH AREA
 ########
 
+all_breeds = get_all_breeds()
+print('PRINTING ALL PRINTS AS: ', type(all_breeds))
+print(all_breeds)
 
-# print(get_all_breeds())
-print(random_image_by_breed('retriever'))
+random_img_by_breed = random_image_by_breed('retriever')
+
+print('PRINTING RANDOM IMAGE RESTULS AS: ', type(random_img_by_breed))
+print(random_img_by_breed)
