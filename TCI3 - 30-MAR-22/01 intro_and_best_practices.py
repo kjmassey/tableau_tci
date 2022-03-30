@@ -12,10 +12,10 @@
 # The HUGE advantage here is being able to install only the necessary
 # libraries, packages, etc. per project and avoid conflicts
 
-## Create A Virtual Environment
+# Create A Virtual Environment
 
 #   python -m venv virtual-environment-name
-#   
+#
 #   this will create a folder 'virtual-environment-name' which, when
 #   activated, will be the default src/dest for imports, installs, etc.
 
@@ -26,7 +26,7 @@
 # pip is included with most installations of Python as the default package
 # manager
 
-## Installing with pip
+# Installing with pip
 
 #   pip install requests
 #   pip install flask==1.0.1
@@ -39,7 +39,13 @@
 # DocStrings are a best practice that explain what your
 # function does and what it should return
 
-def add_two_numbers(num1,num2) -> int:
+
+from imports.import_file2 import *
+from requests import request
+from imports.import_file1 import smile
+
+
+def add_two_numbers(num1, num2) -> int:
     '''
     Returns the sum of two integers as an integer
 
@@ -52,6 +58,7 @@ def add_two_numbers(num1,num2) -> int:
 # IMPORTS
 ########
 
+
 # Since Python is a 'run-time' language, sets of features,
 # AKA 'libraries', beyond base functionality are only enabled/imported
 # as needed.
@@ -61,16 +68,21 @@ def add_two_numbers(num1,num2) -> int:
 
 # Imports can occur in many lots of ways:
 
+
 # 1) importing from an installed library
-from requests import request
 
 # 2) importing from a file
-from imports.import_file1 import smile
-from imports.import_file2 import *
+
 
 def show_inline_import():
+    '''
+    This is an example of an inline import.
+
+    The scope of the import is important! This isn't usually the best option...
+    '''
+
     from imports.import_file1 import frown
-    
+
     print(frown())
 
 
@@ -78,10 +90,13 @@ def show_inline_import():
 #  SCRATCH AREA
 # ################
 
-print(smile())
-print(wink())
-print(kiss())
+print('Add_two_numbers Result: ')
+add_two_numbers(5, 10)
 
-# Why does this one fail?
-print(frown())
-# show_inline_import()
+# print(smile())
+# print(wink())
+# print(kiss())
+
+# # Why does this one fail?
+# print(frown())
+# # show_inline_import()
