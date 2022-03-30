@@ -9,4 +9,6 @@ kyle.massey@gmail.com
 
 Twitter: @UpInYourVizness
 
+**Subscribe here for updates about future events: https://usergroups.tableau.com/tableaucoderst**
+
 
