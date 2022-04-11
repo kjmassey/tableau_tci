@@ -27,3 +27,8 @@ import tableauserverclient TSC
 ## Comparing REST API and TSC interactions
 #### Simplified REST API Flow
 ![graphical representation of simplified tableau server rest api flow](rest_api.png)
+
+
+#
+#### TSC Interactions
+![graphical representation of TSC authorization and content handling](tsc.png)
