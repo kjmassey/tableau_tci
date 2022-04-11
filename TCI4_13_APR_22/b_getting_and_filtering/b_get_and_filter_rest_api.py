@@ -25,6 +25,30 @@ def get_workbooks():
 # print(get_workbooks())
 
 
+def get_workbook_by_luid(wb_luid):
+    '''
+    GET: Retrieve a workbook via its luid.
+
+    Has no parameters, uses X-Tableau-Auth header
+    '''
+
+    auth = sign_in()
+    token = get_token_from_xml(auth)
+    site_luid = get_site_luid_from_xml(auth)
+
+    headers = {
+        'X-Tableau-Auth': token
+    }
+
+    resp = requests.get(
+        f"{SERVER_URL}/api/3.14/sites/{site_luid}/workbooks/{wb_luid}", headers=headers)
+
+    return resp.content
+
+
+# print(get_workbook_by_luid('2ec783f1-078b-4f5e-9673-dadd68539fd6'))
+
+
 def filter_workbooks_by_name(wb_name):
     '''
     GET: Retrieve a filtered list of workbooks where name = wb_name

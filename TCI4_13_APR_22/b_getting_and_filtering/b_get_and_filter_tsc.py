@@ -1,4 +1,5 @@
 from time import strftime, timezone
+from requests import get
 import tableauserverclient as TSC
 from pat import PAT_SECRET
 from datetime import datetime, timezone
@@ -21,6 +22,20 @@ def get_workbooks():
 
 
 # print(get_workbooks())
+
+def get_workbook_by_luid(wb_luid):
+    tab_auth = TSC.PersonalAccessTokenAuth(
+        'Kyle', PAT_SECRET, site_id=SITE_NAME)
+    server = TSC.Server(SERVER_URL, use_server_version=True)
+
+    with server.auth.sign_in(tab_auth):
+        workbook = server.workbooks.get_by_id(wb_luid)
+
+        return workbook.__dict__
+
+
+# print(get_workbook_by_luid('2ec783f1-078b-4f5e-9673-dadd68539fd6'))
+
 
 def filter_workbooks_by_name_req_options(wb_name):
     '''
@@ -92,4 +107,4 @@ def filter_datasources_update_before_python_filter(date):
         return datasources
 
 
-print([ds for ds in filter_datasources_update_before_python_filter('2022-06-01')])
+# print([ds.name for ds in filter_datasources_update_before_python_filter('2022-06-01')])
