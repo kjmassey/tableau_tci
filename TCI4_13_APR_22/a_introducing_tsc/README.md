@@ -9,7 +9,7 @@ It's important to note that there is not 100% parity between the capabilities of
 **TL;DR:** IMHO, the pythonic nature of TSC, i.e. not having to store or memorize request bodies, is almost *always* worth it!
 
 
-##Installing TSC
+## Installing TSC
 *Be sure to create a virtual environment*
 
 `
