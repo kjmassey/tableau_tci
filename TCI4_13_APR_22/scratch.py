@@ -1,3 +1,4 @@
+from http import server
 import tableauserverclient as TSC
 from pat import PAT_SECRET
 
@@ -9,6 +10,13 @@ SERVER = TSC.Server(SERVER_URL, use_server_version=True)
 
 
 with SERVER.auth.sign_in(TAB_AUTH):
-    workbooks, paginator = SERVER.workbooks.get()
+    # Always returns a list
+    workbooks = SERVER.workbooks.filter(name='30 Rock')
 
-    print([wb.name for wb in workbooks])
+    # First result
+    wb = workbooks[0]
+
+    # Query Tableau Server for connections
+    SERVER.workbooks.populate_connections(wb)
+
+    print(wb.connections)
