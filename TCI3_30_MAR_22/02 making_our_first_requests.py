@@ -35,9 +35,10 @@ def random_image_by_breed(breed_name):
 # SCRATCH AREA
 ########
 
-all_breeds = get_all_breeds()
-print('PRINTING ALL PRINTS AS: ', type(all_breeds))
-print(all_breeds)
+
+# all_breeds = get_all_breeds()
+# print('PRINTING ALL PRINTS AS: ', type(all_breeds))
+# print(all_breeds)
 
 random_img_by_breed = random_image_by_breed('retriever')
 

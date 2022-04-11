@@ -62,4 +62,4 @@ def get_projects_by_parent_id(parent_id):
     return resp.content
 
 
-print(get_projects_by_parent_id('830ab4f5-638a-4473-98ac-cbadb9c35f64'))
+print(get_all_projects())

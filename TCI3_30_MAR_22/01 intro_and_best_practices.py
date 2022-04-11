@@ -99,4 +99,4 @@ add_two_numbers(5, 10)
 
 # # Why does this one fail?
 # print(frown())
-# # show_inline_import()
+show_inline_import()
