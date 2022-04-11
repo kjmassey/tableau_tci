@@ -1,8 +1,8 @@
 import requests
-from TCI4_13_APR_22.pat import PAT_SECRET
+from pat import PAT_SECRET
 import xml.etree.ElementTree as ET
 
-SERVER_URL = 'https://10ax.online.tableau.com/'
+SERVER_URL = 'https://10ax.online.tableau.com'
 SITE_NAME = 'kjmdev797388'
 
 PAT_NAME = 'Kyle'
@@ -44,7 +44,7 @@ def get_site_luid_from_xml(resp_content):
     return resp_xml.find('.//{*}site').attrib['id']
 
 
-def get_all_workbooks():
+def get_workbooks():
     '''
     Simple GET request to get all workbooks from site.
 
@@ -60,9 +60,9 @@ def get_all_workbooks():
     }
 
     resp = requests.get(
-        f"{SERVER_URL}/sites/{site_luid}/workbooks", headers=headers)
+        f"{SERVER_URL}/api/3.14/sites/{site_luid}/workbooks", headers=headers)
 
     return resp.content
 
 
-print(get_all_workbooks())
+print(get_workbooks())
