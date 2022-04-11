@@ -19,7 +19,7 @@ pip install tableauserverclient
 ## Importing TSC in a module
 
 `
-import tableauserverclient TSC
+import tableauserverclient as TSC
 `
 
 ---
