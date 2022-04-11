@@ -1,1 +1,0 @@
-PAT_SECRET = 'rYPbhkyxR1GRjcf7w8ROVg==:b5b0DdujCkoz4EcDimVe1KQBZcwUCiuv'
