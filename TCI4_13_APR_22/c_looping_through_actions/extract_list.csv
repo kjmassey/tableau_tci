@@ -1,0 +1,5 @@
+﻿object_name,object_type,object_luid,project_luid,site_name,site_luid
+Extract workbook,workbook,31fe6a65-5165-402b-ba61-e444f60b17f0,830ab4f5-638a-4473-98ac-cbadb9c35f64,kjmdev797388,f8dbec1d-2217-42b0-868a-229a2ff090bb
+Extract workbook 2,workbook,6d901061-ba09-4118-aa3d-c134f614d294,830ab4f5-638a-4473-98ac-cbadb9c35f64,kjmdev797388,f8dbec1d-2217-42b0-868a-229a2ff090bb
+Extract datasource,datasource,1c0dd60b-327a-4898-a481-8fd0eb367963,830ab4f5-638a-4473-98ac-cbadb9c35f64,kjmdev797388,f8dbec1d-2217-42b0-868a-229a2ff090bb
+Extract Datasource 2,datasource,1c48cb9c-f2d5-4f50-a6fa-dd1232c3dff0,830ab4f5-638a-4473-98ac-cbadb9c35f64,kjmdev797388,f8dbec1d-2217-42b0-868a-229a2ff090bb
