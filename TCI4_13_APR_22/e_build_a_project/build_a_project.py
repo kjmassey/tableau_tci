@@ -1,5 +1,3 @@
-from audioop import add
-from math import trunc
 import tableauserverclient as TSC
 from pat import PAT_SECRET
 import db_creds
