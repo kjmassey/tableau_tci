@@ -1,4 +1,4 @@
-# Tableau Coders Initiative Session #4
+# Tableau Coders Initiative Session #4/5
 
 ### Let's start building a Python toolbox using the Tableau Server Client!
 ---
@@ -30,5 +30,5 @@ In this session, we'll start to cover more real-world examples of how you can co
 ## E) Chaining things together -- let's stand up a project!
 - #### Create a project on server
 - #### Create a server group
-- #### Assign permissions to group
+- #### Assign permissions to  group
 - #### Publish a workbook
