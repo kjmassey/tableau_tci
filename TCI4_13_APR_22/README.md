@@ -25,7 +25,7 @@ In this session, we'll start to cover more real-world examples of how you can co
 ## D) Publishing a workbook/datasource
 - #### TSC wins here, hands down!
 - #### Dealing with connections and credentials
-  - Sneak peak: Tableau Document API (**TDI**)
+  - Sneak peak: Tableau Document API (**TDA**)
 
 ## E) Chaining things together -- let's stand up a project!
 - #### Create a project on server
