@@ -136,3 +136,5 @@ TCI3 - 30-MAR-22/pat_secret.py
 pat.py
 /pat_secret.py
 TCI4_13_APR_22\pat.py
+TCI4_13_APR_22/d_publishing/db_creds.py
+scratch.py
