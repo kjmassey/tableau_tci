@@ -137,4 +137,5 @@ pat.py
 /pat_secret.py
 TCI4_13_APR_22\pat.py
 TCI4_13_APR_22/d_publishing/db_creds.py
+TCI4_13_APR_22/e_build_a_project/db_creds.py
 scratch.py
