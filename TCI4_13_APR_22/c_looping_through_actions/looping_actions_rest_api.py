@@ -1,4 +1,4 @@
-from operator import truediv
+
 import tableauserverclient as TSC
 import requests
 import csv
